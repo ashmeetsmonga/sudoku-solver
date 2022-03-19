@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<script src="script.js" async></script>
+		<title>Sudoku</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Sudoku</h1>
+			<div class="board-container">
+				<div class="line row-line-1"></div>
+				<div class="line row-line-2"></div>
+				<div class="line col-line-1"></div>
+				<div class="line col-line-2"></div>
+				<div class="board" id="board"></div>
+			</div>
+
+			<div class="digits" id="digits"></div>
+			<div class="buttons">
+				<div class="btn" id="rulesBtn">How to Play</div>
+				<button class="btn" id="checkBtn">Check</button>
+				<button class="btn" id="uncheckBtn">Uncheck</button>
+				<button class="btn" id="resetBtn">Reset</button>
+				<button class="btn" id="solveBtn">Solve</button>
+				<button class="btn" id="visualizeBtn">Solve (Visualize)</button>
+			</div>
+			<div class="rules" id="rules">
+				<div class="rules-container">
+					<h1>How To Play</h1>
+					<p>
+						To fill a cell, select the number from the bottom row and click on
+						the cell
+					</p>
+					<p>
+						To change number in cell, select another number and click on the
+						cell
+					</p>
+					<p>
+						To empty the cell, select 0 from the bottom row and click on the
+						cell
+					</p>
+					<p>
+						To check whether the filled cells are correct or not, press the
+						'Check' button
+					</p>
+					<p>Press 'Uncheck' button to decolor the cells</p>
+					<p>Press 'Solve' to solve the sudoku</p>
+					<p>Press 'Solve (Visualize)' to see the solving process.</p>
+					<button class="btn" id="playBtn">Play</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

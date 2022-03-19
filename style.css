@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+.board-container {
+    width: 450px;
+    height: 450px;
+    margin: 2rem;
+    position: relative;
+}
+
+.board {
+    width: 450px;
+    height: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    /* background-color: yellow; */
+
+}
+
+.tile {
+    width: 50px;
+    height: 50px;
+    border: 1px solid lightgray;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.tile-filled {
+    background-color: rgb(232, 232, 232);
+    cursor: default;
+}
+
+.row-line-1 {
+    position: absolute;
+    width: 450px;
+    height: 3px;
+    background-color: rgb(167, 167, 167);
+    top: 33%;
+}
+
+.row-line-2 {
+    position: absolute;
+    width: 450px;
+    height: 3px;
+    background-color: rgb(167, 167, 167);
+    top: 66%;
+}
+
+.col-line-1 {
+    position: absolute;
+    width: 3px;
+    height: 450px;
+    background-color: rgb(167, 167, 167);
+    left: 33%;
+}
+
+.col-line-2 {
+    position: absolute;
+    width: 3px;
+    height: 450px;
+    background-color: rgb(167, 167, 167);
+    left: 66%;
+}
+
+.right {
+    background-color: limegreen;
+    border: 1px solid rgb(44, 177, 44);
+}
+
+.wrong {
+    background-color: red;
+    border: 1px solid rgb(203, 1, 1);
+}
+
+.right-border {
+    border: 2px solid rgb(44, 177, 44);
+}
+
+.wrong-border {
+    border: 2px solid rgb(203, 1, 1);
+}
+
+.digits {
+    width: 500px;
+    height: 50px;
+    display: flex;
+
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid lightgray;
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+    margin: 1rem 0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    background-color: rgb(225, 225, 225);
+    border: none;
+    padding: 1rem;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: .5rem .5rem;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(.95);
+}
+
+.rules {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.rules-container {
+    background-color: white;
+    width: 80%;
+    border-radius: 10px;
+    padding: 2rem;
+    text-align: center;
+}
+
+.rules-container p {
+    font-size: 1.3rem;
+    margin: 1.5rem 0;
+}
